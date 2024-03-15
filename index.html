@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+    </header>
+    <main class="codificador">
+        <section>
+            <div><img class="codificador__entrada__logo" src="assets/logoalura.png" alt="logoalura">
+            </div>
+        </section>
+        <section class="codificador__entrada">
+            <div><input class="codificador__entrada__digitetexto" type="text" name="input" value="Digite seu texto"
+                    id="inpTexto" style="width: 100%; height:auto" />
+            </div>
+            <div class="codificador__entrada__inferior">
+                <div class="codificador__entrada__aviso">
+                    <img class="codificador__entrada__aviso__imagem" src="/assets/exclamacao.png" alt="exclamacao">
+                    <div> Apenas letras minúsculas e sem acento.</div>
+                </div>
+                <div class="codificador__entrada__botoes">
+                    <button class="codificador__entrada__botoes__criptografar" onclick="criptografar()">
+                        criptografar</button>
+                    <button class="codificador__entrada__botoes__descriptografar"
+                        onclick="descriptografar()">descriptografar</button>
+                </div>
+            </div>
+        </section>
+        <section class="codificador__saida">
+            <div class="codificador__saida__imagem" id="img"><img src="/assets/imagem.png" alt="imagemcodificacao">
+            </div>
+            <div>
+                <p class="codificador__saida__nenhumamensagem" id="pTexto"><strong>Nenhuma mensagem encontrada</strong>
+                </p>
+                <button class="codificador__saida__copiar" onclick="readText()">
+                    copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p class="rodape__nome">Larissa Trindade - lactrindade@yahoo.com.br</p>
+        <a class="rodape__links" href="https://github.com/LaTrindade"><img src="/assets/github.png">Github</a>
+        <a class="rodape__links" href="https://www.linkedin.com/in/larissa-cristina-morais-trindade/"><img
+                src="/assets/linkedin.png">LinkedIn</a>
+    </footer>
+    <script src="funcoes.js"></script>
+
+</body>
+
+</html>
